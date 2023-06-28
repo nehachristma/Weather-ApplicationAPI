@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <!---google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!---bootstrapcdn -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="api.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card-one">
+     <div class="card-body">
+
+ <h1 id="current-time"></h1>
+ <!-- <h3 id="current-date"></h3>  -->
+  <h3 id="current-location"></h3> 
+  <h1 class="status"></h1>  
+  <button id="get-location" class="find-state">Get Location</button>
+  
+  <!---icon and location -->
+<!-- <h2><i class="fa fa-map-marker" style="color: red;"> </i></h2> -->
+
+ <h1><div class="clock-container"></div></h1>
+ <div class="date-container"></div>
+    </div>
+        </div>
+   
+        </div>
+
+    <div class="container">
+         <div class="card-two">
+      <div class="card-body">
+   
+        <ul>
+    <div class="search">
+          <div class="search-container">
+            <input class="input-city" id="city" type="search" placeholder=" Search any City" aria-label="Search">
+            <button class="search-btn" type="submit" id="submit"><i class="fa fa-search"></i></button>
+           
+      </div>
+      <img src="" id="icon">
+      
+      <h3 style="text-align: center;"><span id="cityName"></span></h3> 
+     
+
+           <li style="text-transform: uppercase; ">  <span id="desp"></span></li>
+           <li><h1><span id="temp"></span><sup> o</sup>C </h1> </li>
+          <li> min <span id="temp_min"></span><sup> o</sup></li>
+          <li>max <span id="temp_max"></span><sup> o</sup> </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery.com/jquery-3.4.1.min.js" integrity="sha26-CSXorXvZcTkaix6Yvo6HppcZGetbYM">
+    crossOrigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script src="script.js"></script>
+  <!-- <script src="d.js"></script> -->
+  
+</body>
+</html>
